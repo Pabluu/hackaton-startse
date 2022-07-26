@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,900&display=swap');
+
+
+* {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 75px;
+    background: no-repeat url('hackaton.png');
+    background-size: cover;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    column-gap: 20px;
+}
+
+
+section#infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    padding-right: 30px;
+    background: #f5f5f5;
+    border: #333;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+div#borda {
+    width: 15%;
+    height: 100%;
+    background: blue;
+    border: 0 solid transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+section#infos:hover {
+    background: #f5f5f5ef;
+}
+
+
+section#formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 0 30px;
+    background: #f5f5f5;
+    border: #333;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+section>label {
+    position: absolute;
+    top: -15px;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bold;
+}
+
+
+
+#infos-list {
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+ul li:hover {
+    text-decoration: underline blue 3px;
+    cursor: default
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#user,
+#pass {
+    display: flex;
+    flex-direction: column;
+}
+
+label[for] {
+    cursor: pointer;
+}
+
+label:hover[for] {
+    background: #0000ff09;
+    border-radius: 5px;
+}
+
+input {
+    height: 35px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 7px;
+}
+
+input:focus {
+    border: 1px solid #0000ffbf;
+    outline: 1px solid #0000ffbf;
+}
+
+button {
+    border: 1px solid #333;
+    border-radius: 8px;
+    height: 40px;
+    width: 75%;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
