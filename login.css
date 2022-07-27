@@ -17,10 +17,13 @@
     --Poseidon-5-hex: #DAFDBA; */
 }
 
-*::selection{
-    background: none;
+::selection {
+    background-color: #40b1a030;
 }
 
+#formulario *::selection {
+    background-color: transparent;
+}
 
 
 * {
@@ -37,7 +40,7 @@ body {
     align-items: center;
     margin: 0 75px;
     /* background: no-repeat url('hackaton.png'); */
-    background-image: linear-gradient(to bottom right, #012030,#13678A,#45C4B0, #9AEBA3);
+    background-image: linear-gradient(to bottom right, #012030, #13678A, #45C4B0, #9AEBA3);
     background-size: cover;
 }
 
