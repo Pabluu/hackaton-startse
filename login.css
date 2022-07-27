@@ -17,6 +17,11 @@
     --Poseidon-5-hex: #DAFDBA; */
 }
 
+*::selection{
+    background: none;
+}
+
+
 
 * {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
