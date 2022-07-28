@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métricar Para Possibilidade Aumento ao Crédito</title>
+    <link rel="stylesheet" href="css/metricas.css">
+</head>
+
+<body>
+    <header>
+        <h1>Métricas Para Possibilitar o Aumento do Crédito</h1>
+    </header>
+
+    <main>
+        <section id='ipt-file'>
+            <section id="priFile" onclick="getFile(this);">
+                <label for="pf" id="pl">Boleto D'Água c/ Comprovante</label>
+                <input id="pf" type="file" >
+
+                <label for="" id="pl-mini" class="mini"></label>
+            </section>
+
+            <hr id="sep">
+
+            <section id="secFile" onclick="getFile(this);">
+                <label for="sf" id="sl">Boleto De Energia c/ Comprovante</label>
+                <input id="sf" type="file" >
+
+                <label for="" id="sl-mini" class="mini"></label>
+            </section>
+
+            <hr id="sep">
+
+            <section id="thrFile" onclick="getFile(this);">
+                <label for="tf" id="tl">Declaração de IRPF</label>
+                <input id="tf" type="file" >
+
+                <label for="" id="sl-mini" class="mini"></label>
+            </section>
+        </section>
+
+        <section id='btn'>
+            <button>Converter para Pdf</button>
+        </section>
+
+
+    </main>
+
+    <script src="metricas.js"></script>
+</body>
+
+</html>

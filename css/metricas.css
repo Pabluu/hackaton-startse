@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+:root {
+    --cinza: #f5f5f5;
+    --cinza-claro: #f5f5f5ef;
+    --primary-color: #359183;
+    --second-color: #40b1a075;
+    --third-color: #40b1a025;
+    --cinza-bold: #333;
+}
+
+::selection{
+    background: var(--third-color);
+    text-decoration-color: transparent ;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 800px;
+    height: 300px;
+    margin: 0;
+}
+
+
+h1 {
+    margin: 25px;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration-color: transparent;
+}
+
+h1:hover {
+    transition: text-decoration .4s ease-out;
+    text-decoration: underline var(--second-color);
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: background-color .4s;
+    border-radius: 5px;
+}
+
+label:hover {
+    border-radius: 5px;
+    background-color: var(--second-color);
+    transition: .35s;
+}
+
+label[class='mini'] {
+    font-size: 12px;
+    text-align: center;
+    height: 1rem;
+    width: 100%;
+}
+
+label[class='mini']:hover {
+    background-color: #40b1a015;
+    cursor: auto;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+hr#sep {
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 3px;
+}
+
+button {
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--third-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+button:hover {
+    border: 1px solid white;
+    outline: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    transition: all .4s ease;
+}
+
+#ipt-file {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-evenly;
+    row-gap: 10px;
+}
