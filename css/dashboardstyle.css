@@ -23,12 +23,9 @@
     align-items: center;
     background-color: #13678A;
     padding: 3%;
-    color:#9AEBA3;
-    height: auto;
     
-    
-
 }
+
 .namecontainer {
     display: flex;
     flex-direction:row;
@@ -126,11 +123,11 @@
 .creditcreditcontainer{
     display: flexbox;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     margin-top:30px;
     margin-bottom: 30px;
-    padding: 1% 5%;
+    padding:  2% 5%;
     border: 1px;
     border-radius: 10px;
     background-color: #13678A;
@@ -144,20 +141,13 @@
     padding: 0% 5%;
     align-items: flex-start;
 }
-.fatura{
+.creditvalue{
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0%;
-    border: 1px;
-    border-radius: 0 0 10px 10px;  
-    background-color: #13678A ;
-    color: #9aeba3;
-    height: 40px;
-    width: 500px;
-    font-weight: 600;
-
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 #maincontainer {
     align-items: flex-start;
     justify-content: flex-start;
@@ -170,14 +160,6 @@
 .creditcreditcontainer p {
     font-size: 40px;
     font-weight: 600;
-}
-
-.fatura:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-}
-.fatura{
-    transition: 0.5s ease transform;
 }
 
 .utilidadesmoney li {
