@@ -41,9 +41,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 100px 150px;
-    /* background: no-repeat url('hackaton.png'); */
     background-image: linear-gradient(to bottom right, #012030, #13678A, #45C4B0, #9AEBA3);
-    background-size: cover;
 }
 
 
