@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: arimo;
+    align-items: center;
+    
+    
+}
+#hud{
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #012030,#13678A,#45C4B0, #9AEBA3);
+    
+}
+.navbar{
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    align-items: center;
+    background-color: #13678A;
+    padding: 3%;
+    color:#9AEBA3;
+    height: auto;
+    
+    
+
+}
+.namecontainer {
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    align-items: flex-end;
+    background-color:#13678A;
+    padding: 3%;
+    color:#9AEBA3;
+    margin: 0;
+    border: 1px;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: space-between;
+    font-weight: 600;
+    height: auto;
+    
+}
+
+
+.creditmoneycontainer{
+    display: flex-box; 
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top:30px;
+    padding-top: 4%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 0%;
+    border: 1px;
+    border-radius: 10px 10px 0px 0px ;
+    background-color: #13678A;
+    color: white /* #9aeba3 ;*/;
+    height: 140px;
+    width: 600px
+    
+   
+}
+
+.creditmoneycontainer h3{
+    font-size: 40px;
+}
+
+.extrato{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 0%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    border: 1px;
+    border-radius: 0 0 0 10px;  
+    background-color: #13678A ;
+    color: #9aeba3;
+    height: 50px;
+    width: 300px;
+    
+}
+.deposito{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 0%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    border: 1px;
+    border-radius: 0 0 10px ;  
+    background-color: #13678A ;
+    color: #9aeba3;
+    height: 50px;
+    width: 300px;
+    
+}
+.extratodeposito{
+    display: flex;
+}
+
+
+.extrato:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.extrato{
+    transition: 0.5s ease transform;
+}
+
+.deposito:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.deposito{
+    transition: 0.5s ease transform;
+}
+
+.creditcreditcontainer{
+    display: flexbox;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top:30px;
+    margin-bottom: 30px;
+    padding: 1% 5%;
+    border: 1px;
+    border-radius: 10px;
+    background-color: #13678A;
+    color: white;
+    height: 190px;
+}
+.barra {
+    display: flex;
+    width: 95%;
+    height: 40px;
+    padding: 0% 5%;
+    align-items: flex-start;
+}
+.fatura{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0%;
+    border: 1px;
+    border-radius: 0 0 10px 10px;  
+    background-color: #13678A ;
+    color: #9aeba3;
+    height: 40px;
+    width: 500px;
+    font-weight: 600;
+
+}
+#maincontainer {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.creditcreditcontainer h3 {
+    font-size: 35px;
+    font-weight: 600;
+}
+.creditcreditcontainer p {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.fatura:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.fatura{
+    transition: 0.5s ease transform;
+}
+
+.utilidadesmoney li {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2px;
+    padding: 5%;
+    font-size: 40px;
+    border: 1px;
+    border-radius: 10px;
+    background-color:#13678A;
+    color: white;
+}
+.utilidadesmoney {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.utilidadesmoney li:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.utilidadesmoney li{
+    transition: 0.5s ease transform;
+}
+.multiplicadores{
+    margin: 20px;
+    padding: 5%;
+    border: 1px;
+    border-radius: 10px;
+    background-color:#13678A ;
+    color: #9AEBA3;
+    text-align: center;
+    
+}
+.multiplicadores:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.multiplicadores{
+    transition: 0.5s ease transform;
+}
+.navbar #userimg:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.navbar #userimg{
+    transition: 0.5s ease transform;
+}
+
+@media only screen and (min-width: 1100px) {
+   #maincontainer {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+    
+    
+    
+        
+    }
+}
