@@ -25,7 +25,7 @@
         height: 150px;
     }
 
-    section#formulario {
+    form#formulario {
         background: var(--cinza);
         border-radius: 10px;
         padding: 20px 0;
