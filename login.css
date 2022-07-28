@@ -42,6 +42,7 @@ body {
     align-items: center;
     margin: 100px 150px;
     background-image: linear-gradient(to bottom right, #012030, #13678A, #45C4B0, #9AEBA3);
+    overflow: hidden;
 }
 
 
