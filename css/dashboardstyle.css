@@ -21,7 +21,7 @@
     flex-direction:row;
     position: relative;
     align-items: center;
-    background-color: #13678A;
+    background-color:linear-gradient(to bottom right, #012030,#13678A,#45C4B0, #9AEBA3);
     padding: 3%;
     
 }
@@ -31,7 +31,7 @@
     flex-direction:row;
     position: relative;
     align-items: flex-end;
-    background-color:#13678A;
+    background-color:linear-gradient(to bottom right, #012030,#13678A,#45C4B0, #9AEBA3);;
     padding: 3%;
     color:#9AEBA3;
     margin: 0;
@@ -40,69 +40,66 @@
     justify-content: space-between;
     font-weight: 600;
     height: auto;
-    
 }
-
-
+#maincontainer{
+    padding: 30px;
+}
+.blococreditcredit{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-bottom: 80px;
+}
 .creditmoneycontainer{
-    display: flex-box; 
+    display: flex; 
     flex-direction: column;
     align-items: flex-start;
-    margin-top:30px;
-    padding-top: 4%;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 0%;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 0px;
     border: 1px;
     border-radius: 10px 10px 0px 0px ;
-    background-color: #13678A;
-    color: white /* #9aeba3 ;*/;
-    height: 140px;
-    width: 600px
+    background-color: white;
+    color:  #13678a /* #9aeba3 ;*/;
+    height: 160px;
     
-   
+    
 }
 
 .creditmoneycontainer h3{
-    font-size: 40px;
+    font-size: 50px;
 }
 
-.extrato{
+
+.extratodeposito{
     display: flex;
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding-top: 0%;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    border: 1px;
-    border-radius: 0 0 0 10px;  
-    background-color: #13678A ;
-    color: #9aeba3;
-    height: 50px;
-    width: 300px;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:space-between;
+    background-color: white;
+    color: #13678A;
+    padding: 0px 20px 20px 20px;
+    height: auto;
+    border-radius: 0px 0px 10px 10px;
     
 }
 .deposito{
     display: flex;
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding-top: 0%;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    border: 1px;
-    border-radius: 0 0 10px ;  
-    background-color: #13678A ;
-    color: #9aeba3;
-    height: 50px;
-    width: 300px;
+    padding-right:60px ;
     
 }
-.extratodeposito{
-    display: flex;
-}
 
+#blococredit{
+    display: flexbox;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.501);
+    border: 1px;
+    border-radius: 10px;
+    flex-grow: 0.5;
+   
+}
 
 .extrato:hover{
     transform: scale(1.05);
@@ -125,14 +122,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top:30px;
-    margin-bottom: 30px;
-    padding:  2% 5%;
+    padding: 20px 30px;
     border: 1px;
     border-radius: 10px;
-    background-color: #13678A;
-    color: white;
-    height: 190px;
+    background-color:white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.501);
+    color:#13678A;
+    height: 215px;
+    flex-grow: 0,7;
+    
 }
 .barra {
     display: flex;
@@ -140,15 +138,11 @@
     height: 40px;
     padding: 0% 5%;
     align-items: flex-start;
+    
 }
 .creditvalue{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-#maincontainer {
     align-items: flex-start;
     justify-content: flex-start;
 }
@@ -161,7 +155,43 @@
     font-size: 40px;
     font-weight: 600;
 }
+.faturaconteiner{
+    display: inline-flexbox;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px;
+    border-radius: 10px;
+    background-color:white;
+    color: #13678A;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.501);
 
+}
+
+
+.atributosfatura{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 85px;
+    background-color:white;
+    font-weight: 600;
+    
+}
+.titulofatura{
+    font-weight: 600;
+    font-size: 50px;
+    background-color: white;
+}
+.valorfatura{
+    display: flexbox;
+}
+.valoramortização{
+    display: flexbox;
+}
+.valorfinal{
+    display: flexbox;
+}
 .utilidadesmoney li {
     display: inline-flex;
     flex-direction: row;
@@ -172,8 +202,9 @@
     font-size: 40px;
     border: 1px;
     border-radius: 10px;
-    background-color:#13678A;
-    color: white;
+    background-color:white;
+    color: #13678A;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.501);
 }
 .utilidadesmoney {
     display: flex;
@@ -194,9 +225,11 @@
     padding: 5%;
     border: 1px;
     border-radius: 10px;
-    background-color:#13678A ;
-    color: #9AEBA3;
+    background-color:white ;
+    color: #13678A;
     text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.501);
+    
     
 }
 .multiplicadores:hover{
@@ -214,15 +247,22 @@
     transition: 0.5s ease transform;
 }
 
-@media only screen and (min-width: 1100px) {
-   #maincontainer {
-    display: flex;
-    flex-direction: row;
-   justify-content: space-evenly;
-   align-items: center;
-    
-    
-    
-        
+@media only screen and (max-width: 1080px) {
+    .blococreditcredit {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;   
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .blococreditcredit {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;   
     }
 }
