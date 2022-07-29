@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/dashboardstyle.css">
-    <title>CodeMoney</title>
-</head>
-<body>
-    <section id="hud">
-        <div class="navbar"> <img id=userimg src="./images/user.png" alt="userfig"  height="100px" ></div>
-        <div class="namecontainer">
-            <p>Olá, Cliente</p>
-            <p>+</p>
-        </div>
-    <div id="pagina">
-        <main id="maincontainer">
-            <div id="blococredit">
-                <div class="creditmoneycontainer">
-                <h2>Valor Da Garantia:</h2>
-                <h3>R$:500,00</h3>
-                </div>
-                <section class="extratodeposito">
-                    <div class="extrato" type="button" ><h3> > Ver Extrato</h3></div>
-                    <div class="deposito" type="button" ><h3> > Depositar</h3></div>
-                </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/public/css/dashboardstyle.css">
+        <title>CodeMoney</title>
+    </head>
+    <body>
+        <section id="hud">
+            <div class="navbar"> <img id=userimg src="/public/images/user.png" alt="userfig"  height="100px" ></div>
+            <div class="namecontainer">
+                <p>Olá, Cliente</p>
+                <p>+</p>
             </div>
+            <div id="pagina">
+                <main id="maincontainer">
+                    <div class="blococreditcredit">
+                        <div id="blococredit">
+                            <div class="creditmoneycontainer">
+                                <h2>Valor Da Garantia:</h2>
+                                <h3>R$:500,00</h3>
+                            </div>
+                            <div class="extratodeposito">
+                                <div class="extrato" type="button"><h3> > Ver Extrato</h3></div>
+                                <div class="deposito" type="button" ><h3> > Depositar</h3></div>
+                            </div>
+                        </div>
 
-            <div class="creditcreditcontainer">
-                <section class="creditvalue">
-                <h3>Valor Crédito Disponivel:</h3>
-                <p>R$:1000,00</p>
-                <progress class="barra" value="900" max="1000">100%</progress>
+                        <div class="creditcreditcontainer">
+                            <div class="creditvalue">
+                            <h3>Valor Crédito Disponivel:</h3>
+                            <p>R$:1000,00</p>
+                            <progress class="barra" value="900" max="1000">100%</progress>
+                            </div>
+                        </div>
+                    </div>
+                        <section class="faturaconteiner">
+                            <div class="titulofatura"> Fatura:</div>
+                            <div class="atributosfatura">
+                                <div class="valorfatura"> Valor Fatura: R$:750,00</div>
+                                <div class="valoramortização"> Amortização: R$ 100,00</div>
+                                <div class="valorfinal"> Valor Final: R$: 650,00</div>
+                            </div>
+                        </section>
+                </main>
+            
+                <section id="utilidades">
+                    <ul class="utilidadesmoney">
+                        <li>PIX</li>
+                        <li>Transferências</li>
+                        <li>Boleto</li>
+                        <li>Recarga</li>
+                    </ul>
                 </section>
-            </div>
-            <section class="faturaconteiner">
-                <div class="titulofatura">> Fatura</div>
-                <div class="barrafatura"><progress class="barrafatura2" value="900" max="1000">100%</progress></div>
-                <div class="atributosfatura">
-                    <div class="valorfatura"> >Valor Fatura:</div>
-                    <div class="valoramortização"> >Amortização:</div>
-                    <div class="valorfinal"> >Valor Final</div>
-                </div>
-            </section>
-        </main>
-    </div>
-        <section id="utilidades">
-            <ul class="utilidadesmoney">
-                <li>PIX</li>
-                <li>Transferências</li>
-                <li>Boleto</li>
-                <li>Recarga</li>
-            </ul>
+                    <footer>
+                        <section class="multiplicadores" type="button">
+                        <p>Multiplicadores</p>
+
+                        </section>
+                    </footer>
+            </div>  
         </section>
-
-        <footer>
-            <section class="multiplicadores" type="button">
-                <p>Multiplicadores</p>
-
-            </section>
-        </footer>
-    
-</body>
+    </body>
 </html>
