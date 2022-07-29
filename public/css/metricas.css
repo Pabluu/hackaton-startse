@@ -9,9 +9,9 @@
     --cinza-bold: #333;
 }
 
-::selection{
+::selection {
     background: var(--third-color);
-    text-decoration-color: transparent ;
+    text-decoration-color: transparent;
 }
 
 * {
@@ -26,18 +26,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 30px;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #012030, #13678A, #45C4B0, #9AEBA3);
+    min-width: 500px;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    width: 800px;
-    height: 300px;
+    justify-content: space-around;
+    width: 700px;
+    height: 60%;
     margin: 0;
+    background: var(--cinza);
+    padding: 20px 0;
+    border: 1px solid var(--cinza);
+    border-radius: 5px;
 }
 
 
@@ -45,12 +52,8 @@ h1 {
     margin: 25px;
     font-size: 40px;
     text-transform: uppercase;
-    text-decoration-color: transparent;
-}
-
-h1:hover {
-    transition: text-decoration .4s ease-out;
-    text-decoration: underline var(--second-color);
+    color: white;
+    text-align: center;
 }
 
 label {
@@ -92,8 +95,8 @@ hr#sep {
 button {
     height: 40px;
     padding: 0 10px;
-    border: 1px solid var(--primary-color);
-    background-color: var(--third-color);
+    border: 1px solid var(--cinza-bold);
+    background-color: var(--cinza);
     border-radius: 5px;
     cursor: pointer;
     transition: all .4s ease;
@@ -101,9 +104,10 @@ button {
 
 button:hover {
     border: 1px solid white;
-    outline: 1px solid var(--primary-color);
-    background-color: var(--primary-color);
+    outline: 1px solid var(--cinza-bold);
+    background-color: var(--cinza-bold);
     transition: all .4s ease;
+    color: white;
 }
 
 #ipt-file {
