@@ -252,6 +252,19 @@ body{
     transition: 0.5s ease transform;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline #333333ef 3px;
+}
+
+a:active,
+a:visited {
+    color: #333;
+}
+
 @media only screen and (max-width: 1080px) {
     .blococreditcredit {
         display:flex;

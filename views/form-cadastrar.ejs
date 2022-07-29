@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
     <link rel="stylesheet" href="css/form-cadastrar.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- JQUERY-MASK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body>
     <section id="cadastrar">
         <section class="form-container">
@@ -16,25 +27,32 @@
             <form action="/cadastrar" method="POST">
                 <h2 class="form-title">Cadastrar</h2>
 
-                <label for="name">Nome Completo:</label>
+                <label for="name">Nome Completo</label>
                 <input type="text" name="name" id="name" placeholder="Nome completo" required>
-        
-                <label for="cpf">CPF:</label>
-                <input type="number" name="cpf" id="cpf" placeholder="Digite o seu CPF" required>
-        
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email" placeholder="Digite o seu Email" required>
-        
-                <label for="password">Senha:</label>
+
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" class="mascara-cpf" placeholder="Digite o seu CPF" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu Email" required>
+
+                <label for="password">Senha</label>
                 <input type="password" name="password" id="password" placeholder="Crie uma senha" required>
-        
+
                 <div class="button">
                     <button type="submit">Cadastrar</button>
                     <button>Login</button>
                 </div>
-        
+
             </form>
         </section>
     </section>
+
+    <script>
+        $(document).ready(function () {
+            $('.mascara-cpf').mask('000.000.000-00')
+        })
+    </script>
 </body>
+
 </html>
