@@ -55,25 +55,29 @@ app.post('/cadastrar', (req, res) => {
             where: {
                   cpf: cpf
             }
-      }).then(user => {
-            if (user == undefined) {
-                  Users.create({
-                        name,
-                        cpf,
-                        email,
-                        password
-                  })
-                        .then(() => {
-                              req.session.logado = true
-                              res.redirect('/logado')
-                        })
-                        .catch(() => {
-                              res.redirect('/#cadastrar')
-                        })
-            } else {
-                  res.redirect('/#cadastrar')
-            }
       })
+            .then(user => {
+                  if (user == undefined) {
+                        Users.create({
+                              name,
+                              cpf,
+                              email,
+                              password
+                        })
+                              .then(() => {
+                                    req.session.logado = true
+                                    res.redirect('/logado')
+                              })
+                              .catch(() => {
+                                    res.redirect('/#cadastrar')
+                              })
+                  } else {
+                        res.redirect('/#cadastrar')
+                  }
+            })
+            .catch(() => {
+                  console.log('entrou')
+            })
 })
 
 app.post('/logar', (req, res) => {
