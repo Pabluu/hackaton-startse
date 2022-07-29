@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Login</title>
+            <link rel="stylesheet" href="../public/css/login.css" />
+            <link rel="stylesheet" href="../public/css/login-responsive.css" />
+
+            <!-- JQUERY -->
+            <script
+                  src="https://code.jquery.com/jquery-3.6.0.min.js"
+                  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                  crossorigin="anonymous"
+            ></script>
+
+            <!-- JQUERY-MASK -->
+            <script
+                  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+                  integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer"
+            ></script>
+      </head>
+
+      <body>
+            <main>
+                  <section id="infos">
+                        <ul id="infos-list">
+                              <li>Tenha acesso à crédito a qualquer momento</li>
+                              <li>Tenha acesso à crédito a qualquer momento</li>
+                              <li>Tenha acesso à crédito a qualquer momento</li>
+                              <li>Tenha acesso à crédito a qualquer momento</li>
+                        </ul>
+                  </section>
+
+                  <form action="/logar" method="POST" id="formulario">
+                        <h2 id="text-logar">Logar</h2>
+
+                        <div id="user">
+                              <label for="cpf">CPF</label>
+                              <input
+                                    type="text"
+                                    id="cpf"
+                                    class="mascara-cpf"
+                                    name="cpf"
+                              />
+                        </div>
+
+                        <div id="pass">
+                              <label for="password">Password</label>
+                              <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                              />
+                        </div>
+
+                        <button type="submit">entrar</button>
+
+                        <div id="create-account">
+                              <a href="">Não possui uma conta ? Crie agora</a>
+                        </div>
+                  </form>
+            </main>
+
+            <script>
+                  $(document).ready(function () {
+                        $('.mascara-cpf').mask('000.000.000-00')
+                  })
+            </script>
+      </body>
+</html>
