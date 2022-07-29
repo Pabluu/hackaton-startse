@@ -56,6 +56,11 @@ app.get('/cadastrar', (req, res) => {
       res.render('form-cadastrar')
 })
 
+app.get('/desloga', (req, res) => {
+      req.session.logado = false
+      res.redirect('/')
+})
+
 //rota para cadastro
 app.post('/cadastrar', (req, res) => {
       const name = req.body.name
