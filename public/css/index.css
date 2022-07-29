@@ -62,10 +62,24 @@ nav li {
       display: flex;
       align-items: center;
       justify-content: center;
+      z-index: 1;
+}
+
+.main-img::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 60px;
+      height: 80%;
+      width: 100%;
+      background-color: #000;
+      opacity: 0.4;
+      z-index: 2;
 }
 
 .main-img img {
       width: 600px;
+      z-index: 3;
 }
 
 main h1 {
@@ -75,32 +89,47 @@ main h1 {
       justify-content: center;
       text-align: center;
       padding: 50px;
+      z-index: 3;
 }
 
 #about-us {
       display: flex;
+      align-items: center;
+      height: min-content;
+      margin-top: 90px;
+      text-align: justify;
+      background: linear-gradient(to bottom right, #012030,#13678A,#45C4B0, #9AEBA3);
+}
+
+.about-us-container {
+      display: flex;
       flex-direction: column;
       align-items: center;
-      height: 800px;
-      padding: 60px;
+      height: min-content;
+      padding: 50px;
+      margin: 100px;
       text-align: justify;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.288);
+      border-radius: 30px;
 }
 
 #about-us h2 {
       font-size: 50px;
-      margin: 30px;
+      margin: 40px;
 }
 
 #about-us p {
-      padding: 10px 0px;
-      margin: 30px;
+      padding-top: 10px;
+      margin: 20px;
       font-size: 26px;
-      font-weight: 500;
+      font-weight: 300;
 }
 
 .cards {
-      height: 1050px;
+      height: 1000px;
       margin: auto;
+      padding: 20px;
 }
 
 .cards-container1 {
@@ -118,20 +147,36 @@ main h1 {
 }
 
 .cards img {
-      width: 400px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.301);
+      width: 350px;
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.733);
+      margin-right: 20px;
 }
+
+.required {
+      height: 280px;
+      padding: 30px 30px 30px 60px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.705);
+  }
+  
+  .required h2 {
+      font-size: 40px;
+      padding-bottom: 20px;
+      margin: 20px 0px;
+  }
+  
+  .required li {
+      list-style: none;
+      margin: 10px 0px;
+      font-size: 22px;
+  }
 
 footer {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      font-size: 20px;
       padding: 20px;
-      color: #000;
-      background: linear-gradient(
-            to bottom right,
-            #012030,
-            #13678a,
-            #45c4b0,
-            #9aeba3
-      );
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(to bottom right, #012030,#13678A,#45C4B0);
 }
