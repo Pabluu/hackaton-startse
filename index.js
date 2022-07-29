@@ -35,6 +35,15 @@ app.get('/login', (req, res) => {
       res.render('login')
 })
 
+app.get('/multiplicadores', (req, res) => {
+      if (req.session.logado == true) {
+            res.render('multiplicadores');
+      } else {
+            res.render('forbidden');
+      }
+});
+
+// num é melhor colocar /dashboard ?
 app.get('/logado', (req, res) => {
       if (req.session.logado == true) {
             res.render('dashboard')
