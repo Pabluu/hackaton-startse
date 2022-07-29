@@ -37,11 +37,11 @@ app.get('/login', (req, res) => {
 
 app.get('/multiplicadores', (req, res) => {
       if (req.session.logado == true) {
-            res.render('multiplicadores');
+            res.render('multiplicadores')
       } else {
-            res.render('forbidden');
+            res.render('forbidden')
       }
-});
+})
 
 // num é melhor colocar /dashboard ?
 app.get('/logado', (req, res) => {
@@ -53,7 +53,7 @@ app.get('/logado', (req, res) => {
 })
 
 app.get('/cadastrar', (req, res) => {
-      res.render('form-cadastrar');
+      res.render('form-cadastrar')
 })
 
 //rota para cadastro
@@ -68,29 +68,25 @@ app.post('/cadastrar', (req, res) => {
             where: {
                   cpf: cpf
             }
-      })
-            .then(user => {
-                  if (user == undefined) {
-                        Users.create({
-                              name,
-                              cpf,
-                              email,
-                              password
+      }).then(user => {
+            if (user == undefined) {
+                  Users.create({
+                        name,
+                        cpf,
+                        email,
+                        password
+                  })
+                        .then(() => {
+                              req.session.logado = true
+                              res.redirect('/logado')
                         })
-                              .then(() => {
-                                    req.session.logado = true
-                                    res.redirect('/logado')
-                              })
-                              .catch(() => {
-                                    res.redirect('/#cadastrar')
-                              })
-                  } else {
-                        res.redirect('/#cadastrar')
-                  }
-            })
-            .catch(() => {
-                  console.log('entrou')
-            })
+                        .catch(() => {
+                              res.redirect('/cadastrar')
+                        })
+            } else {
+                  res.redirect('/cadastrar')
+            }
+      })
 })
 
 app.post('/logar', (req, res) => {
