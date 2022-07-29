@@ -49,10 +49,16 @@ nav a:hover {
 nav ul {
       list-style: none;
       display: flex;
+      align-items: center;
 }
 
 nav li {
-      margin-right: 40px;
+      margin-left: 30px;
+      margin-right: 10px;
+}
+
+nav img {
+      width: 35px;
 }
 
 .main-img {
