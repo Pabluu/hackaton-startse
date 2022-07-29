@@ -8,21 +8,15 @@
     --second-color: #40b1a075;
     --third-color: #40b1a025;
     --cinza-bold: #333;
-
-    /*
-    --Poseidon-1-hex: #012030;
-    --Poseidon-2-hex: #13678A;
-    --Poseidon-3-hex: #45C4B0;
-    --Poseidon-4-hex: #9AEBA3;
-    --Poseidon-5-hex: #DAFDBA; */
 }
 
-::selection {
+*:not(label, button)::selection {
     background-color: #40b1a030;
 }
 
-#formulario *::selection {
+label::selection, button::selection{
     background-color: transparent;
+
 }
 
 
@@ -56,6 +50,7 @@ main {
     width: 800px;
     background: var(--cinza);
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
 
@@ -64,7 +59,7 @@ section#infos {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    background: var(--primary-color);
+    background-image: linear-gradient(to bottom right, #012030, #13678A, #45C4B0);
     height: 100%;
     width: 55%;
     border-bottom-left-radius: 10px;
@@ -85,20 +80,9 @@ form#formulario {
     row-gap: 10px;
 }
 
-
-section>label {
-    position: absolute;
-    top: -100px;
-    background: var(--cinza);
-    padding: 10px;
-    border-radius: 20px;
+h2#text-logar{
     text-transform: uppercase;
-    color: var(--primary-color);
-    font-weight: bold;
-    height: 50px;
 }
-
-
 
 #infos-list {
     list-style-type: none;
@@ -153,28 +137,31 @@ input {
     border: 1px solid var(--cinza-bold);
     border-radius: 6px;
     padding: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 input:focus {
     border: 1px solid var(--primary-color);
     outline: 1px solid var(--primary-color);
+    box-shadow: none;
 }
 
 button {
     border: 1px solid var(--cinza-bold);
     border-radius: 8px;
     height: 40px;
-    width: 75%;
+    width: 65%;
     margin-top: 15px;
     transition: all .4s ease-out;
 }
 
 button:hover {
-    background: var(--primary-color);
+    background: var(--cinza-bold);
     color: white;
     cursor: pointer;
     border: 1px solid var(--cinza);
-    outline: 1px solid var(--primary-color);
+    outline: 1px solid var(--cinza-bold);
 }
 
 
