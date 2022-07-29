@@ -1,6 +1,6 @@
-const database = 'database'
+const database = 'db'
 const user = 'root'
-const password = 'password'
+const password = 'root286'
 
 const Sequelize = require('sequelize')
 const connection = new Sequelize(database, user, password, {
