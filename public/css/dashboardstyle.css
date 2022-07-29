@@ -22,11 +22,29 @@ body{
     flex-direction:row;
     position: relative;
     align-items: center;
+    justify-content: space-between;
     background-color:linear-gradient(to bottom right, #012030,#13678A,#45C4B0, #9AEBA3);
     padding: 3%;
-    
 }
-
+.botoes{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ gap: 20px;
+ height: 40px;
+}
+#home{
+    height: 40px;
+}
+#dashboard{
+    height: 40px;
+}
+#multiplicadores{
+    height: 40px;
+}
+#logoff{
+    height: 40px;
+}
 .namecontainer {
     display: flex;
     flex-direction:row;
@@ -129,9 +147,9 @@ body{
     background-color:white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.501);
     color:#13678A;
-    height: 215px;
-    flex-grow: 0,7;
+    height: 234px;
     
+
 }
 .barra {
     display: flex;
@@ -144,8 +162,8 @@ body{
 .creditvalue{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 .creditcreditcontainer h3 {
