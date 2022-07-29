@@ -2,10 +2,10 @@
 
 @media screen and (max-width: 830px) {
     body {
-        margin: 50px 50px;
+        margin: 20px 0;
         overflow: hidden;
         min-width: 500px;
-        min-height: 560px;
+        height: 150vh;
     }
 
     main {
@@ -14,10 +14,6 @@
         background: transparent;
         row-gap: 50px;
         height: 100%;
-    }
-
-    label#text-logar {
-        top: -20px;
     }
 
     section#infos {
@@ -29,6 +25,5 @@
         background: var(--cinza);
         border-radius: 10px;
         padding: 20px 0;
-        height: 50%;
     }
 }
