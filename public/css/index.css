@@ -62,24 +62,10 @@ nav li {
       display: flex;
       align-items: center;
       justify-content: center;
-      z-index: 1;
-}
-
-.main-img::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 60px;
-      height: 80%;
-      width: 100%;
-      background-color: #000;
-      opacity: 0.4;
-      z-index: 2;
 }
 
 .main-img img {
       width: 600px;
-      z-index: 3;
 }
 
 main h1 {
@@ -89,7 +75,6 @@ main h1 {
       justify-content: center;
       text-align: center;
       padding: 50px;
-      z-index: 3;
 }
 
 #about-us {
