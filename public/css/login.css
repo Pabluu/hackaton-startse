@@ -85,18 +85,22 @@ h2#text-logar{
 }
 
 #infos-list {
-    list-style-type: none;
+    /* list-style-type: none; */
     text-transform: capitalize;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
 }
 
-ul {
-    text-align: center;
-}
 
 ul li {
+    /* text-align: center; */
     color: white;
-    line-height: 30px;
+    line-height: 35px;
+    margin-left: 20px;
 }
 
 
@@ -104,13 +108,16 @@ ul li:hover {
     position: relative;
     text-decoration: underline white 3px;
     cursor: default;
+    list-style-type: none;
+    left: 20px;
+    margin-left: 0;
 }
 
 
 ul li:hover::before {
     content: '>';
     position: absolute;
-    left: 0;
+    left: -20px;
     font-size: 25px;
     vertical-align: middle;
     font-weight: bold;
