@@ -58,6 +58,7 @@ form {
     margin-bottom: 15px;
     text-transform: uppercase;
     text-align: center;
+    margin-right: 70px;
 }
 
 
@@ -76,13 +77,13 @@ input:focus{
     box-shadow: none;
 }
 
-.submit-buttom {
+button {
     font-size: 15px;
     margin-top: 18px;
     padding: 10px;
     width: 100px;
     color: #fff;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.726);
     border-radius: 8px;
     cursor: pointer;
 }

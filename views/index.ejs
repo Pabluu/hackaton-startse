@@ -9,7 +9,6 @@
             />
             <title>CrediTech</title>
             <link rel="stylesheet" href="css/index.css" />
-            <link rel="stylesheet" href="css/form-cadastrar.css" />
 
             <!-- JQUERY -->
             <script
@@ -34,7 +33,7 @@
                         <ul>
                               <li><a href="">Início</a></li>
                               <li><a href="#about-us">Sobre</a></li>
-                              <li><a href="#cadastrar">Cadastre-se</a></li>
+                              <li><a href="/form-cadastrar">Cadastre-se</a></li>
                               <li><a href="/login">Login</a></li>
                         </ul>
                   </nav>
@@ -42,105 +41,63 @@
 
             <main>
                   <section class="main-img">
-                        <img src="images/logo.png" alt="Logo" />
+                        <img src="../public/images/logo.png" alt="Logo" />
                         <h1>
                               O mesmo cartão. Uma nova forma de pedir crédito.
                         </h1>
                   </section>
 
                   <section id="about-us">
-                        <h2>Como Funciona</h2>
-                        <p>
-                              O cartão de crédito da CrediTech é exatamente como
-                              a maioria dos cartões de crédito, com limite e
-                              fatura. Mas a forma de contratação e liberação,
-                              foi especialmente pensada para ajudar a
-                              reorganizar a sua vida financeira.
-                        </p>
-                        <p>
-                              Quando você adquirir o nosso serviço, você irá
-                              pagar uma carência que pode ser à vista ou
-                              parcelado em 3x no boleto como forma de garantia.
-                              Após o pagamento integral dessa carência, você
-                              recebe um cartão de crédito com o limite de 200%
-                              do valor da carência pago, limitado de acordo com
-                              a renda. Deste valor da carência, 90% voltará para
-                              você, pois será amortizado em no mínimo 10
-                              parcelas.
-                        </p>
-                        <p>
-                              Caso você atrase o seu cartão por 15 dias, o seu
-                              cartão será bloqueado temporariamente até você
-                              quitá-lo. Se o atraso se der por 2 meses, o seu
-                              cartão será cancelado e o restante do dinheiro da
-                              carência que ainda restava para amortizar nas
-                              parcelas, será usado para quitar as parcelas em
-                              atraso.
-                        </p>
+                        <div class="about-us-container">
+                              <h2>Como Funciona</h2>
+                              <p>
+                                    Porque nos escolher? Porque o cartão de crédito da CrediTech é exatamente como
+                                    a maioria dos cartões de crédito, com limite e
+                                    fatura. Mas a forma de contratação e liberação,
+                                    foi especialmente pensada para ajudar a
+                                    reorganizar a sua vida financeira.
+                              </p>
+                              <p>
+                                    Quando você adquirir o nosso serviço, você irá
+                                    pagar uma taxa que pode ser à vista ou
+                                    parcelado em 3x no boleto como forma de garantia.
+                                    Após o pagamento integral dessa taxa de garantia, você
+                                    receberá um cartão de crédito com o limite de 200%
+                                    do valor da garantia pago, limitado de acordo com
+                                    a renda. Deste valor da taxa de garantia, 90% voltará para
+                                    você, pois será amortizado aos poucos em no mínimo 10
+                                    parcelas.
+                              </p>
+                              <p>
+                                    Caso você atrase o seu cartão por 15 dias, o seu
+                                    cartão será bloqueado temporariamente até você
+                                    quitá-lo. Se o atraso persistir por 2 meses, o seu
+                                    cartão será cancelado e o restante do dinheiro da
+                                    garantia que ainda restava para amortizar nas
+                                    parcelas, será usado para quitar as parcelas em
+                                    atraso.
+                              </p>
+                        </div>
                   </section>
 
-                  <section id="cadastrar">
-                        <section class="form-container">
-                              <div class="form-img">
-                                    <img src="images/credit-card.png" alt="" />
-                              </div>
-                              <form action="/cadastrar" method="POST">
-                                    <h2 class="form-title">Cadastrar</h2>
-
-                                    <label for="name">Nome Completo</label>
-                                    <input
-                                          type="text"
-                                          name="name"
-                                          id="name"
-                                          placeholder="Nome completo"
-                                          required
-                                    />
-
-                                    <label for="cpf">CPF</label>
-                                    <input
-                                          type="text"
-                                          class="mascara-cpf"
-                                          name="cpf"
-                                          id="cpf"
-                                          placeholder="Digite o seu CPF"
-                                          required
-                                    />
-
-                                    <label for="email">Email</label>
-                                    <input
-                                          type="email"
-                                          name="email"
-                                          id="email"
-                                          placeholder="Digite o seu Email"
-                                          required
-                                    />
-
-                                    <label for="password">Senha</label>
-                                    <input
-                                          type="password"
-                                          name="password"
-                                          id="password"
-                                          placeholder="Crie uma senha"
-                                          required
-                                    />
-
-                                    <button class="submit-buttom" type="submit">
-                                          Cadastrar
-                                    </button>
-                              </form>
-                        </section>
-                  </section>
                   <article class="cards">
                         <div class="cards-container1">
-                              <img src="images/card-1.png" alt="Card 1" />
-                              <img src="images/card-2.png" alt="Card 2" />
-                              <img src="images/card-3.png" alt="Card 3" />
+                              <img src="../public/images/card-1.png" alt="Card 1" />
+                              <img src="../public/images/card-2.png" alt="Card 2" />
+                              <img src="../public/images/card-3.png" alt="Card 3" />
                         </div>
                         <div class="cards-container2">
-                              <img src="images/card-4.png" alt="Card 4" />
-                              <img src="images/card-5.png" alt="Card 5" />
+                              <img src="../public/images/card-4.png" alt="Card 4" />
+                              <img src="../public/images/card-5.png" alt="Card 5" />
                         </div>
                   </article>
+                  <section class="required">
+                        <h2>Requisitos</h2>
+                        <ul>
+                            <li>-Há 6 meses sem dívidas incluídas no Serasa</li>
+                            <li>-Contas básicas quitadas em dia</li>
+                        </ul>
+                    </section>
             </main>
 
             <script>
@@ -151,5 +108,6 @@
       </body>
       <footer>
             <p>&copy; CrediTech</p>
+            <p>2022</p>
       </footer>
 </html>
