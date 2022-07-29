@@ -114,3 +114,14 @@ button:hover, .login:hover {
 input:hover {
     background-color: rgb(248, 240, 240)
 }
+
+
+@media screen and (max-width: 1180px) {
+    .form-img {
+        display: none;
+    }
+
+    form {
+        width: 100%;
+    }
+}
