@@ -77,13 +77,40 @@ input:focus{
     box-shadow: none;
 }
 
+.button {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 70px;
+}
+
 button {
     font-size: 15px;
     margin-top: 18px;
-    padding: 10px;
+    padding: 8px;
     width: 100px;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.726);
     border-radius: 8px;
     cursor: pointer;
+}
+
+.login {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 18px;
+    padding: 8px;
+    width: 100px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.726);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover, .login:hover {
+    opacity: 0.8;
+}
+
+input:hover {
+    background-color: rgb(248, 240, 240)
 }
